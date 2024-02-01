@@ -48,6 +48,7 @@ app.listen(3333, () => 'server running on port 3333')"""
 def create_prisma():
     #instalando dependencias
     subprocess.run("yarn add -D prisma", shell=True)
+    subprocess.run("yarn add -D @prisma/client", shell=True)
 
     #Iniciando o prisma
     subprocess.run("yarn prisma init --datasource-provider sqlite", shell=True)
